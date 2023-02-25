@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top left, rgb(175, 255, 230), rgb(134, 186, 255));
+}
+
+.refresh_btn {
+  cursor: pointer;
+  background: dodgerblue;
+  padding: 20px;
+  border-radius: 1000px;
+}
+.refresh_btn #icon {
+  color: white;
+}
+
+.preview {
+  width: 90%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 30px;
+  max-height: 80vh;
+}
+.preview > * {
+  transition: 0.4s;
+  opacity: 1;
+}
+.preview .op_hide {
+  opacity: 0;
+}
+
+.justify-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+img {
+  border-radius: 10px;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0%;
+     object-position: 0%;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  max-width: 30vw;
+}
+
+.enabled_btn {
+  background: dodgerblue;
+  color: white;
+}
+
+.preview_btn {
+  border: 2px solid dodgerblue;
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.mic_btn_ripple {
+  cursor: pointer;
+  border-radius: 1000px;
+  padding: 20px;
+}
+.mic_btn_ripple .mic_btn {
+  background: dodgerblue;
+  padding: 20px;
+  border-radius: 1000px;
+}
+.mic_btn_ripple .mic_btn #icon {
+  color: white;
+}
+
+.red_shadow {
+  box-shadow: 0 0 10px 2px rgb(255, 162, 162);
+}
+
+.caption_text {
+  font-size: 2rem;
+}
+
+.ripple_anim {
+  -webkit-animation: rippleAnim 1.5s infinite;
+          animation: rippleAnim 1.5s infinite;
+}
+
+@-webkit-keyframes rippleAnim {
+  0% {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    background: rgba(136, 255, 227, 0.8);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@keyframes rippleAnim {
+  0% {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    background: rgba(136, 255, 227, 0.8);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.3);
+  }
+}/*# sourceMappingURL=App.css.map */
